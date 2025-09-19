@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout – Insta Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔝 Topbar -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/icon.jpg" alt="Logo" class="logo" />
+      <span>Insta Fashion</span>
+    </div>
+    <div class="search-signup">
+      <input type="text" placeholder="Search for styles..." class="search-input" />
+      <button onclick="window.location.href='profile.html'">Profile</button>
+    </div>
+  </header>
+
+  <!-- 🧾 Checkout Section -->
+  <main class="checkout-container">
+    <h1>Checkout</h1>
+    <p class="delivery-promise">🚀 Delivered in 30 minutes across Raipur</p>
+
+    <!-- 🛍 Product Summary -->
+    <div class="product-summary">
+      <img src="product 2.avif" alt="Product" />
+      <div>
+        <h2>Tailored Pants</h2>
+        <p>₹1,499</p>
+        <p>Quantity: 1</p>
+      </div>
+    </div>
+
+    <!-- 📍 Address Form -->
+    <form class="checkout-form">
+      <h3>Delivery Address</h3>
+      <input type="text" placeholder="Full Name" required />
+      <input type="tel" placeholder="Mobile Number" required />
+      <textarea placeholder="Full Address with Landmark" required></textarea>
+      <input type="text" placeholder="Pincode" required />
+    </form>
+
+    <!-- 💳 Payment Options -->
+    <div class="payment-section">
+      <h3>Payment Method</h3>
+      <label><input type="radio" name="payment" value="cod" checked /> Cash on Delivery</label>
+      <label><input type="radio" name="payment" value="upi" /> UPI / Wallet</label>
+      <label><input type="radio" name="payment" value="card" /> Debit / Credit Card</label>
+    </div>
+
+    <button onclick="startPayment()">Pay ₹1499 Now</button>
+  </main>
+
+
+  <footer>
+    <p>© 2025 Insta Fashion. Built in Raipur, styled for the world.</p>
+  </footer>
+<head> 
+  
+</body> <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</head>
+
+
+  <script src="scripts/checkout.js" defer></script>
+</body>
+</html>

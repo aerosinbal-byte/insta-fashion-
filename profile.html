@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile – Insta Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔝 Topbar -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/icons/logo.svg" alt="Logo" class="logo" />
+      <span>Insta Fashion</span>
+    </div>
+    <div class="search-signup">
+      <input type="text" placeholder="Search for styles..." class="search-input" />
+      <button class="signup-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+      <button class="profile-btn">Profile</button>
+    </div>
+  </header>
+
+  <!-- 👤 Profile Section -->
+  <main class="profile-container">
+    <h1>Welcome, Priya</h1>
+    <p>Your fashion dashboard</p>
+
+    <div class="profile-card">
+      <img src="assets/images/user-avatar.jpg" alt="User Avatar" class="avatar" />
+      <div class="details">
+        <p><strong>Email:</strong> priya@example.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Location:</strong> Raipur, India</p>
+        <button class="edit-btn" onclick="openEditModal()">Edit Profile</button>
+      </div>
+    </div>
+
+    <section class="orders">
+      <h2>Recent Orders</h2>
+      <ul>
+        <li>🛍 Black Luxe Dress – Delivered ✅</li>
+        <li>👕 Oversized Tee – In Transit 🚚</li>
+      </ul>
+    </section>
+
+    <section class="settings">
+      <h2>Account Settings</h2>
+      <button class="logout-btn">Log Out</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Insta Fashion. Built in Raipur, styled for the world.</p>
+  </footer>
+
+  <script src="scripts/profile.js" defer></script>
+</body>
+</html>
+
+<body>
+<div class="modal-overlay" id="editModal">
+  <div class="modal">
+    <h2>Edit Profile</h2>
+    <form id="editForm">
+      <label>Profile Photo</label>
+      <input type="file" accept="image/*" />
+
+      <label>Full Name</label>
+      <input type="text" value="Priya" />
+
+      <label>Email</label>
+      <input type="email" value="priya@example.com" />
+
+      <label>Phone</label>
+      <input type="tel" value="+91 98765 43210" />
+
+      <div class="modal-actions">
+        <button type="submit">Save Changes</button>
+        <button type="button" onclick="closeEditModal()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+</body>

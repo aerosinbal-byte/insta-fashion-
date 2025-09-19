@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Cotton T-Shirt – Insta Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔝 Topbar -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/icon.jpg" alt="Logo" class="logo" />
+      <span>Insta Fashion</span>
+    </div>
+    <div class="search-signup">
+      <input type="text" placeholder="Search for styles..." class="search-input" />
+      <button class="signup-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+      <button class="profile-btn" onclick="window.location.href='profile.html'">Profile</button>
+    </div>
+  </header>
+
+  <!-- 👕 Product Section -->
+  <main class="product-detail">
+    <div class="media">
+      <img src="pro4.jpg" alt="Classic Cotton T-Shirt" />
+
+    <div class="info">
+      <h1>Classic Cotton T-Shirt</h1>
+      <p class="price">₹799</p>
+      <p class="desc">
+        Premium-grade cotton T-shirt with a tailored fit and breathable fabric. Ideal for everyday wear, layering, or casual outings. Delivered in 30 minutes across Raipur.
+      </p>
+      <div class="actions">
+       <button class="buy-now" onclick="buyNow()">Buy Now</button>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+   <!-- ⭐ Reviews -->
+  <section class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review">
+      <strong>⭐⭐⭐⭐⭐</strong>
+      <p>“Perfect fit and super soft. My go-to tee now!” – Rahul</p>
+    </div>
+    <div class="review">
+      <strong>⭐⭐⭐⭐</strong>
+      <p>“Delivered in 25 minutes. Fabric feels premium.” – Meera</p>
+    </div>
+  </section>
+  <!-- ✍ Review Submission Form -->
+  <form id="reviewForm" class="review-form">
+    <h3>Leave a Review</h3>
+    <input type="text" placeholder="Your Name" required />
+    <select required>
+      <option value="">Rating</option>
+      <option value="5">⭐⭐⭐⭐⭐</option>
+      <option value="4">⭐⭐⭐⭐</option>
+      <option value="3">⭐⭐⭐</option>
+      <option value="2">⭐⭐</option>
+      <option value="1">⭐</option>
+    </select>
+    <textarea placeholder="Your review..." required></textarea>
+    <button type="submit">Submit Review</button>
+  </form>
+</section>
+
+ <footer>
+    <p>© 2025 Insta Fashion. Built in Raipur, styled for the world.</p>
+  </footer>
+

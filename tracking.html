@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Your Order – Insta Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔝 Topbar -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/icons/logo.svg" alt="Logo" class="logo" />
+      <span>Insta Fashion</span>
+    </div>
+    <div class="search-signup">
+      <button onclick="window.location.href='profile.html'">Profile</button>
+    </div>
+  </header>
+
+  <!-- 📦 Tracking Section -->
+  <main class="tracking-container">
+    <h1>Track Your Order</h1>
+    <p class="order-id">Order ID: #IF20250918</p>
+
+    <!-- 🧾 Product Summary -->
+    <div class="product-summary">
+      <img src="assets/images/pants1.jpg" alt="Tailored Pants" />
+      <div>
+        <h2>Tailored Pants</h2>
+        <p>₹1,499</p>
+        <p>Delivery to: Priya, Raipur</p>
+      </div>
+    </div>
+
+    <!-- 🚚 Status Timeline -->
+    <div class="status-timeline">
+      <div class="status-step active">
+        <span>✅</span>
+        <p>Order Confirmed</p>
+      </div>
+      <div class="status-step active">
+        <span>🧵</span>
+        <p>Packed & Ready</p>
+      </div>
+      <div class="status-step active">
+        <span>🚚</span>
+        <p>Out for Delivery</p>
+      </div>
+      <div class="status-step">
+        <span>📬</span>
+        <p>Delivered</p>
+      </div>
+    </div>
+
+    <!-- ⏱ ETA -->
+    <div class="eta-box">
+      <p><strong>Estimated Arrival:</strong> Within 30 minutes</p>
+      <p><strong>Delivery Partner:</strong> Arjun (📞 +91 98765 43210)</p>
+    </div>
+
+    <div class="cta-buttons">
+      <button onclick="window.location.href='catalog.html'">Continue Shopping</button>
+      <button onclick="window.location.href='profile.html'">View My Orders</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Insta Fashion. Built in Raipur, styled for the world.</p>
+  </footer>
+</body>
+</html>
